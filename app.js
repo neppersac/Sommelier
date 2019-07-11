@@ -22,5 +22,5 @@ app.use((_, res) => {
 });
 
 app.listen(app.get("port"), "0.0.0.0", () => {
-  console.log('Server starting on => ${app.get("port")} ');
+  console.log(`Server starting on => ${app.get("port")} `);
 });

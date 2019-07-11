@@ -3,11 +3,11 @@ require('dotenv').config();
 
 exports.credentials = (req, res) => {
   let body = {
-    api_key: 'yI0gFiP6jAXhVc2Ujzu8m_J878G03H5I5udH3hQoOEaA',
-    workspace_id: 'ad400566-4c71-4db9-af65-b240bd427c28',
-    id: '117028',
+    api_key: process.env.IAM_APIKEY,
+    workspace_id: process.env.WORKSPACE_ID,
+    id: process.env.MARATONA_ID,
     cpf: req.body.cpf,
-    desafio: '1'
+    desafio: process.env.DESAFIO
   }
   
   console.log(body)
